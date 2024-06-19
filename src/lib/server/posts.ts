@@ -16,7 +16,8 @@ export const posts = Object.entries(
 	.map(([filepath, globEntry]) => {
 		return {
 			...globEntry.metadata,
-            slug: filepath.replace('.md', '').replace('/src/lib/posts/', '')
+			slug: filepath.replace('.md', '').replace('/src/lib/posts/', ''),
+			filepath: filepath
 		};
 	})
 	// sort by date
