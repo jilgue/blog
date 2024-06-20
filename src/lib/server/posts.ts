@@ -11,12 +11,12 @@ export interface Post {
 
 // Get all posts and add metadata
 export const posts = Object.entries(
-	import.meta.glob<GlobEntry>('/src/lib/posts/**/*.md', { eager: true })
+	import.meta.glob<GlobEntry>('/src/data-posts/**/*.md', { eager: true })
 )
 	.map(([filepath, globEntry]) => {
 		return {
 			...globEntry.metadata,
-			slug: filepath.replace('.md', '').replace('/src/lib/posts/', ''),
+			slug: filepath.replace('.md', '').replace('/src/data-posts/', ''),
 			filepath: filepath
 		};
 	})
