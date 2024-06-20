@@ -16,6 +16,16 @@
 			</li>
 		{/each}
 	</ul>
+
+	<ul class="links">
+		{#each data.postDates as postDate}
+			<li>
+				<p>{postDate.day}</p>
+				<p>{postDate.month}</p>
+				<p>{postDate.year}</p>
+			</li>
+		{/each}
+	</ul>
 </div>
 
 <style lang="scss">
