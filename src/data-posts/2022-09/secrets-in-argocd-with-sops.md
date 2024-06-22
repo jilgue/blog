@@ -4,6 +4,8 @@ date: '2022-09-07'
 description: Secrets in ArgoCD with Sops and GCP KMS
 ---
 
+# Secrets in ArgoCD with Sops
+
 [ArgoCD](https://argoproj.github.io/cd/) is a tool that implements the gitops philosophy for deploying applications on Kubernetes. It is a declarative, Git-based deployment system that uses a simple, human-readable manifest file to define the desired state of your application. In this article, we will explore how to use ArgoCD with [Sops](https://github.com/mozilla/sops) to manage secrets in a gitops workflow.
 
 We are using [sops with GCP KMS](https://github.com/mozilla/sops#encrypting-using-gcp-kms), the first thing we need is a service account with the role `roles/cloudkms.cryptoKeyDecrypter` and create a secret on Kubernetes:

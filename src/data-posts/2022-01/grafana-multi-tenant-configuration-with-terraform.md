@@ -4,6 +4,8 @@ date: '2022-01-20'
 description: A way to configure a multi-tenant environment in Grafana is to use organization to split each tenant. But, how can I configure this by IaC?
 ---
 
+# Grafana multi-tenant configuration with Terraform
+
 A way to configure a multi-tenant environment in Grafana is to use organization to split each tenant. But, how can I configure this by IaC?
 
 Grafana provides an active provisioning system that uses config files. Data sources and dashboards can be defined via files which are version controlled.
