@@ -2,6 +2,7 @@
 title: Secrets in ArgoCD with Sops
 date: '2022-09-07'
 description: Secrets in ArgoCD with Sops and GCP KMS
+tags: kubernetes, argocd, sops
 ---
 
 # Secrets in ArgoCD with Sops

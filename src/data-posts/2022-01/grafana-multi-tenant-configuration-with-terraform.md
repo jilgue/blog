@@ -2,6 +2,7 @@
 title: Grafana multi-tenant configuration with Terraform
 date: '2022-01-20'
 description: A way to configure a multi-tenant environment in Grafana is to use organization to split each tenant. But, how can I configure this by IaC?
+tags: grafana, terraform, IaC, DevOps
 ---
 
 # Grafana multi-tenant configuration with Terraform
